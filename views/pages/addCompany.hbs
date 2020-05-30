@@ -1,0 +1,50 @@
+<h1>Add New Company</h1>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card card-signin flex-row my-5">
+                    <div class="card-img-left d-none d-md-flex">
+                        <!-- Background image for card set in CSS! -->
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Info</h5>
+                        <form class="form-signin" action="/addCompany" method="post">
+                            <div class="form-label-group">
+                                <label for="inputUserame"> Name Of The Company</label>
+                                <input type="text" name="name" id="inputUserame" class="form-control" placeholder="Name"
+                                    required autofocus>
+                            </div>
+
+                            <div class="form-label-group">
+                                <label for="inputtext">Product Of the Company</label>
+                                <input type="text" name="product" id="inputtext" class="form-control"
+                                    placeholder="text address" required>
+
+                            </div>
+
+                            <hr>
+
+                            <div class="form-label-group">
+                                <label for="inputtext">Description Of the Company</label>
+                                <input type="text" name="description" id="inputtext" class="form-control"
+                                    placeholder="text address" required>
+                            </div>
+
+                            <div class="form-label-group">
+                                <label for="inputtext">Owner Of the Company</label>
+                                <input type="text" name="owner" id="inputtext" class="form-control"
+                                    placeholder="text address" required>
+                            </div>
+
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Add
+                                Comapny</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</body>

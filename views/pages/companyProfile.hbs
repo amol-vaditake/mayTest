@@ -1,0 +1,29 @@
+<h1 style="text-align: center;">Company Info</h1>
+{{#if len}}
+<h3>Current Employee of Comapny</h3>
+{{#each data}}
+<li style="list-style: none;">
+    <h3><em>Name</em> : <span style="color: chartreuse;">{{this.empName}}</span></h3>
+    <h3><em>Joined Date</em> : <span style="color: chartreuse;">{{this.joinedAt}}</span></h3>
+    <hr>
+    <hr>
+</li>
+{{/each}}
+{{else}}
+<h1>No current employee in the company</h1>
+{{/if}}
+<hr>
+<hr>
+<hr>
+<hr>
+<h1>History of Employee of the Compnay</h1>
+{{#each data1}}
+<li style="list-style: none;">
+    <h3><em>Name</em> : <span style="color: chartreuse;">{{this.empName}}</span></h3>
+    <h3><em>Joined Date</em> : <span style="color: chartreuse;">{{this.joinedAt}}</span></h3>
+    <h3><em>Leaved Date</em> : <span style="color: chartreuse;">{{this.leavedAt}}</span></h3>
+    <hr>
+</li>
+{{/each}}
+
+</ul>
